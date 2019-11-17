@@ -1,0 +1,51 @@
+<br>
+
+<div class="m-5 box-newuser">
+    
+    <div class="bg-dark text-white p-2" style="border-top-left-radius: 17px;border-top-right-radius: 17px;">
+        <h5 class="text-center">Novo usuário de sistema</h5>
+    </div>
+    <form action="/registra" method="post" class="row p-3">
+        
+        <div class="col-md-6">
+            <div class="form-group">
+                <input class="form-control" type="text" name="nome" placeholder="Nome e sobrenome">
+            </div>
+            <hr>
+            <div class="form-group">
+                <input class="form-control" type="email" name="email" placeholder="E-mail">
+            </div>
+            <hr>
+            <div class="form-group">
+                <input class="form-control" type="text" name="username" placeholder="Username">                
+            </div>
+            <hr>
+            <div class="form-group">
+                <select class="form-control" name="type">
+                    <option value="">Permissões</option>
+                    <option value="1">Administrador</option>
+                    <option value="2">Editor</option>
+                    <option value="3">Atendente</option>
+                </select>
+            </div>
+            
+        </div>
+
+        <div class="col-md-6">
+            <div align="center" class="m-5 text-primary">
+                <i class="fas fa-user-shield fa-7x"></i><br>
+                <button class="btn-custom-cadastro">Cadastrar</button>
+                <?php if(isset($_GET['form']) && $_GET['form'] == 'error') {?>
+                    <div class="mt-3">
+                        <span style="font-size: 1.3em;" class="text-danger">Informções inválidas!</span>
+                    </div>
+                <?php } else if(isset($_GET['form']) && $_GET['form'] == 'success') {?>
+                    <div class="mt-3" >
+                        <span style="font-size: 1.3em;" class="text-success">Usuário cadastrado com sucesso</span>
+                    </div>
+                <?php }?>
+            </div>
+        </div>
+    </form>
+
+</div>

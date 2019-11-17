@@ -1,0 +1,521 @@
+/*
+    @author: -*-*- Luan Vinicius -*-*-
+    @Organization> -*-*- DNSecury - Desenvolvimento e soluções em segurança cibernética.
+*/
+
+/*
+    ------  Media queries ------
+*/
+body::-webkit-scrollbar {
+  display: none;
+}
+
+@media (max-width: 320.00px) {
+  section.conteudo-0{
+    font-size: 20px;
+    text-align: center;
+  }
+  section.conteudo-0 .futuro-sec {
+    font-size: 13px;
+    text-align: center;
+  }
+  footer div.title-footer{
+    font-size: 0.75em;
+  }
+  .img-custom{
+    padding: 16px 4px;
+    border-radius: 10px;
+    width: 239px;
+    height: 210px;
+  }
+  #nav-principal{
+    margin-left: 10px;
+  }
+  #conteudo-3 .text-white h3 {
+    font-size: 22px;
+  }
+  #conteudo-3 .text-white p {
+    margin-top: 17px;
+    margin-bottom: 1rem;
+  }
+}
+
+/* Extra small devices (portrait phones, less than 576px)*/
+
+@media (min-width: 320.90px) and (max-width: 575.98px) {
+  section.conteudo-0{
+    font-size: 23px;
+    text-align: center;
+  }
+  footer div.title-footer{
+    font-size: 0.75em;
+  }
+  .img-custom{
+    padding: 16px 4px;
+    border-radius: 10px;
+    width: 239px;
+    height: 210px;
+  }
+  #nav-principal{
+    margin-left: 10px;
+  }
+  
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .btn-custom{
+    margin: 10px 15px;
+  }
+  section.conteudo-0{
+    font-size: 0.97em;
+  }
+  section.conteudo-0 .futuro-sec {
+    font-size: 40px;
+    text-align: center;
+  }
+  .img-custom{
+    padding: 5px 0px;
+    border-radius: 10px;
+    width: 390px;
+    height: 210px;
+  }
+  footer div.title-footer{
+    font-size: 0.97em;
+  }
+
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+  section#home h2{
+    font-size: 30px;
+  }
+  section.conteudo-0{
+    font-size: 48px;
+    text-align: center;
+    padding-left: 128px;
+  }
+  section.conteudo-0 .futuro-sec {
+    font-size: 24px;
+    text-align: center;
+  }
+  .img-custom-p1{
+    padding: 5px 0px;
+    border-radius: 10px;
+    width: 200px;
+    height: 235px;
+  }
+  .img-custom-p2{
+    padding: 5px 0px;
+    border-radius: 10px;
+    width: 200px;
+    height: 150px;
+  }
+  .img-icon_conteudos{
+    width: 110px;
+  }
+  footer div.title-footer{
+    font-size: 0.99em;
+  }
+
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  section#home h2{
+    font-size: 40px;
+  }
+  section.conteudo-0{
+    font-size: 1.3em;
+  }
+  .img-custom-p1{
+    padding: 5px 0px;
+    border-radius: 10px;
+    width: 350px;
+    height: 200px;
+  }
+  .img-custom-p2{
+    padding: 5px 0px;
+    border-radius: 10px;
+    width: 299px;
+    height: 200px;
+  }
+  .img-icon_conteudos{
+    width: 130px;
+  }
+  footer div.title-footer{
+    font-size: 1.3em;
+  }
+  
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+  section#home h2{
+    font-size: 50px;
+  }
+  section.conteudo-0{
+    font-size: 1.5em;
+  }
+  .img-custom-p1{
+    padding: 5px 0px;
+    border-radius: 10px;
+    width: 350px;
+    height: 200px;
+  }
+  .img-custom-p2{
+    padding: 5px 0px;
+    border-radius: 10px;
+    width: 350px;
+    height: 200px;
+  }
+  .img-icon_conteudos{
+    width: 130px;
+  }
+  footer div.title-footer{
+    font-size: 1.5em;
+  }
+
+}
+
+/*
+     -------- Layout --------
+*/
+
+html, body, #home{
+  height: 100%;
+}
+body{
+  font-family: "Times New Roman", Times, serif;
+  font-variant: small-caps;
+}
+
+.box-one{
+  position: relative;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* .box-one-index{
+  background-image: url("../imagens/olho.jpg");
+} */
+
+/*
+  ------ Barra de navegação ------
+*/
+
+
+nav.fund-traparent-nav {
+  padding: 15px 0px;
+  background: rgba(0, 0, 0, 0.69);
+}
+
+.navbar-light .navbar-nav .nav-item .nav-link{
+  color: white;
+}
+
+.navbar-light .navbar-nav .nav-item .nav-link:hover{
+  color: green;
+}
+
+nav.navbar-light button.navbar-toggler {
+  color: white;
+  border-color: white;
+}
+
+
+/*
+    ----- CAPA -----
+*/
+
+.bg_video_index{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1000;
+  /*background: url("../imagens/cyber-security-3400657_1920.jpg") no-repeat;*/
+  background-size: cover;
+}
+
+.capa{
+  text-align: center;
+}
+
+.btn-custom{
+  color: white;
+  border-radius: 800px;
+  -webkit-border-radius: 500px;
+  -moz-border-radius: 500px;
+  text-transform: uppercase;
+  transition: background 0.4s, 04s;
+  padding: 15px 20px;
+}
+
+
+section#home h2{
+  font-weight: 900;
+  letter-spacing: -0.05em;
+  margin-bottom: 50px;
+  color: #E6E6FA;
+}
+
+/*
+  ---- Estrutura conteúdos ----
+*/
+
+.separador{
+  padding-top: 10px;
+  margin-top: 5px;
+}
+
+.border_cus:hover{
+  border: 3px solid lightslategrey;
+}
+
+.box-conteudo{/*Box 1*/
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.box-conteudo{/*Imagem box 1*/
+  background-image: url("../imagens/fundo_conteudo_1.jpg");
+}
+
+
+.box-conteudo-2{ /*Box 2*/
+  position: relative;
+  height: 10%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.box-conteudo-2{/*Imagem box 2*/
+  background-image: url("../imagens/fundo_conteudo_2.jpg");
+}
+
+
+.box-conteudo-3{ /*Box 3*/
+  position: relative;
+  height: 335px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.box-conteudo-3{/*Imagem box 3*/
+  background-image: url("../imagens/fundo_conteudo_3.png");
+}
+
+.box-conteudo-3 #owl-slider .item .item-slider h4 {
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 13px;
+}
+
+.box-conteudo-3 #owl-slider .item .item-slider {
+  /* width: 270px; */
+  width: 100%;
+}
+
+.box-conteudo-3 #owl-slider .item .item-slider a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+.box-conteudo-3 #owl-slider .item .item-slider {
+  padding: 10px;
+}
+
+.box-conteudo-3 #owl-slider .item .item-slider p {
+  text-align: center;
+  padding-top: 10px;
+  font-size: 15px;
+}
+.box-conteudo-3 #owl-slider .item .item-slider .img-slider {
+  height: 140px;
+}
+
+
+.conteudo-0{
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
+  /*background: url("../imagens/fundo_branco_2.jpg"), rgba(0, 0, 0, 0.97) no-repeat center;
+  background-size: cover;*/
+}
+section.conteudo-0 {
+  color: white;
+  font-weight: 900;
+}
+
+#conteudo-1{
+  padding: 10px;
+  background: url("../imagens/fundo_conteudo_fixo.png"), rgba(0, 0, 0, 0.90) no-repeat center;
+  border-bottom: 0.1px solid white;
+  padding-bottom: 20px;
+}
+section#conteudo-1 {
+  color: white;
+}
+section#conteudo-1 h4{
+  font-weight: 900;
+}
+section#conteudo-1 p a{
+  font-weight: 900;
+  text-decoration: none;
+  color: #e9ecef;
+}
+section#conteudo-1 p a:hover{
+  color: springgreen;
+  border: 1px solid springgreen;
+  padding: 5px 200px 0px 5px;
+}
+
+#conteudo-2{
+  padding: 20px;
+  background: url("../imagens/fundo_conteudo_fixo.png"), rgba(0, 0, 0, 0.90) no-repeat center;
+}
+section#conteudo-2{
+  font-size: small;
+  text-align: center;
+  color: white;
+}
+section#conteudo-2 h5{
+  text-align: center;
+}
+section#conteudo-2 p{
+  display: block;
+  margin: 1em auto;
+}
+section#conteudo-2 a{
+  font-size: 1.5em;
+  font-weight: 900;
+  text-decoration: none;
+  color: #e9ecef;
+}
+section#conteudo-2 a:hover{
+  font-size: 1.6em;
+  color: springgreen;
+  border: 1px solid springgreen;
+  padding: 6px 20px 0px 20px;
+}
+.conteudo_custom{
+  background-color: rgba(0, 0, 0, 0.81);
+}
+
+#conteudo-3{
+  padding: 10px;
+  background: url("../imagens/fundo_conteudo_fixo.png"), rgba(0, 0, 0, 0.90) no-repeat center;
+  border-bottom: 0.1px solid white;
+}
+
+.box-conteudo-3-container{
+  padding-top: 20px;
+  background: rgba(0, 0, 0, 0.90);
+}
+
+
+/*
+   ----- Formularios -------
+*/
+
+.separador_contact{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.btn-custom_form{
+  width: 50%;
+  height: 50px;
+  float: right;
+}
+
+
+.font-size-span{
+  font-size: 2em;
+  font-weight: 999;
+  text-transform: uppercase;
+}
+
+.font-size-span-1{
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+
+/*Elementos alternativos publicos*/
+.bg-none{
+  background-color: transparent;
+}
+
+#modalButtom{
+  background: rgba(0, 0, 0, 0.96);
+  border: 0.5px solid white;
+}
+#modalButtom:hover{
+  color: springgreen;
+  border: 0.5px solid springgreen;
+}
+
+#modalButtomHello{
+  background: rgba(0, 0, 0, 0.96);
+  border: 0.5px solid white;
+}
+
+#modalButtomHello:hover{
+  color: springgreen;
+  border: 0.5px solid springgreen;
+}
+
+.bg-hover:hover{
+  background: rgba(0, 0, 0, 0.96);
+}
+
+
+
+/* Footer (rodapé)  ==============*/
+.footer-principal{
+  width: 100%;
+  background: url("../imagens/fundo_conteudo_fixo.png"), rgba(0, 0, 0, 0.96) no-repeat center;
+}
+
+.title-footer{
+  font-weight: 900;
+  color: white;
+  background: ;
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
+}
+
+footer div p a{
+  margin: 6px;
+  color: white;
+  font-size: 15px;
+  text-decoration: none;
+}
+footer div p a:hover{
+  border: 1px solid springgreen;
+  color: springgreen;
+  padding: 0px 70px 0px 5px;
+}
+
+.footer-referencia{
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  color: white;
+}
+.hover-icons-sociais:hover{
+  color: springgreen;
+}

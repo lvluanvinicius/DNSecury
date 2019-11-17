@@ -1,0 +1,62 @@
+<br>
+<?php foreach ($this->view->total_login as $indice => $dado) {?>
+<?php if($dado['id'] == $_SESSION['id']) {?>
+
+<div class="card p-2">
+
+    <div class="">
+        <div class="">
+            <form action="/profileEditaLogin?alt=alter&id=<?= $_SESSION['id']?>" method="post" class="p-3 row">
+            
+                <div class="col-md-8">
+                    <hr>
+                    <div class="form-group">
+                        <input class="form-control" type="text" value="<?= $dado['nome']; ?>" name="nome" placeholder="Nome completo">
+                    </div>
+                    <hr>
+                    <div class="form-group">
+                        <input class="form-control" type="email" value="<?= $dado['email']; ?>" name="email" placeholder="E-mail">
+                    </div>
+                    <hr>
+                    <div class="form-group">
+                        <input class="form-control" type="text" value="<?= $dado['username']; ?>" name="username" placeholder="Username">                
+                    </div>
+                    <hr>
+                    <div class="form-group">
+                        <select class="form-control" name="type">
+                            <option value="<?= $_SESSION['id'];?>"><?= $dado['type'];?></option>
+                            <option value="1">Administrador</option>
+                            <option value="2">Editor</option>
+                            <option value="3">Desenvolvedor</option>
+                            <option value="4">Atendente</option>
+                        </select>
+                    </div>
+                    <hr>                                                
+                </div>
+
+                <div class="col-md-4 text-center">
+                    <div class="p-5 mt-4">
+                        <h3>Aviso!</h3>
+                        <hr>
+                        <p>
+                            Tenha cuidado ao fazer alterações, pois qualquer modificação pode influenciar nas suas
+                            permissões de usuário. <br>                            
+                        </p>
+                        <button class="btn-custom-cadastro">Confirmar</button>
+                    </div>
+                    
+                </div>
+            </form>
+        </div>
+    
+    </div>
+
+</div>
+<?php }?>
+<?php }?>
+<hr>
+<!-- 
+<div role="alert" class="text-danger text-center pt-3">
+    <p>Por questões de segurança a sessão será encerrada e você terá que fazer outro login para salvar novos logs.</p>
+    <hr>
+</div> -->

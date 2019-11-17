@@ -1,0 +1,30 @@
+@media (min-width: 1200px) 
+{
+
+    /* ========================================================= */
+    .box-newuser
+    {
+      box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+      border-radius: 20px;
+      border: 2px solid rgba(0,0,0,0.5);
+    }
+
+    .btn-custom-cadastro 
+    {
+      background: rgba(0,0,0,0.2);
+      margin-top: 30px;
+      width: 250px;
+      height: 50px;
+      border-radius: 20px;
+    }
+    
+    .remove-element span a {
+      font-size: 19px;
+      color: red;
+      margin-top: 70px;
+      position: relative;
+      border-bottom: 1px solid red;
+    }
+
+}
+

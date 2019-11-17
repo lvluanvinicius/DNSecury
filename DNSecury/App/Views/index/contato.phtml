@@ -1,0 +1,99 @@
+
+<section id="home" class="d-flex box-one capa-contact border-bottom"> <!-- Capa -->
+
+<div class="container align-self-center">
+
+  <div class="row">
+    <div class="col-md-12 capa">
+
+      <h2 class="text-dark">Deixe seu contato</h2>
+
+    </div>
+  </div>
+
+</div>
+</section><!-- Fim capa -->
+
+<section id="servicosPage" class="box-conteudo"><!-- Inicio Contato -->
+<div class="container separador_contact">
+
+  <div class="row pb-5">
+    <div class="col-md-2 col-md-2 d-none d-lg-block">
+      <div class="hover-icons-sociais">
+        <i class="fas fa-file-signature text-white fa-6x"></i>
+      </div>
+    </div>
+
+    <div class="col-md-10">
+      <span class="text-white font-size-span">Deixe seu contato</span><br>
+      <span class="text-white font-size-span-1">Disponibilidade</span><br>
+      <span class="text-white font-size-span-2">Segunda à Sábado, das 09 às 18h, exceto feriados.</span>
+    </div>
+  </div>
+
+  <form action="/registercontact?form=contato" method="post" class="row"><!-- Início Formulário de contado -->
+
+    <div class="col-md-6"><!-- Inicio parte 1 contato -->
+
+      <div class="form-group">
+        <input class="form-control" type="text" id="name" placeholder="Nome *" name="name">
+      </div>
+
+      <div class="form-group">
+        <input class="form-control" type="tel" id="cellphone" placeholder="Telefone *" name="tel">
+      </div>
+      
+      <div class="message_set">
+        <div class="form-group">
+          <textarea class="form-control" type="text" id="message" placeholder="Deixe uma mensagem *" name="message"></textarea>
+        </div>
+      </div>
+
+    </div><!-- Fim parte 1 contato -->
+
+    <div class="col-md-6"><!-- Inicio parte 2 contato -->
+      <div class="form-group">
+        <input class="form-control" type="email" id="email" placeholder="Melhor e-mail *" name="mail">
+      </div>
+
+      <div class="form-group">
+        <input class="form-control" type="text" id="citystate" placeholder="Cidade - UF *" name="city">
+      </div>
+
+      <div class="form-group">
+        <input class="form-control" type="text" id="subject" placeholder="Motivo" name="subject">
+      </div>
+
+      <div>
+        <? if(isset($_GET['acao']) &&  $_GET['acao'] == 'success') { ?>
+          <!--  -->
+        <? } ?>
+        <button class="btn btn-primary btn-custom_form" type="submit" id="enviaContato">Enviar</button>
+      </div>
+
+    </div><!-- Fim parte 2 contato -->
+
+  </form><!-- Fim Formulário de contado -->
+
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="SendContact_Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content" style="background: rgba(0, 0, 0, 0.90); color: springgreen;">
+      <div id="div_titulo_modal">
+        <h5 class="modal-title" id="titulo_modal"></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-white" id="body_modal">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn text-white" data-dismiss="modal" id="modalButtom">Ok</button>
+      </div>
+    </div>
+  </div>
+</div>
+</section><!-- Fim Contato -->

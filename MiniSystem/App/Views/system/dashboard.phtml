@@ -1,0 +1,135 @@
+<? $log = isset($_SESSION['id_type']) ? $_SESSION['id_type'] : $log;?>
+<div class="row">
+
+    <div class="col-xl-12">
+        <div class="breadcrumb-holder">
+            <h1 class="main-title float-left">Painel</h1>
+            <ol class="breadcrumb float-right">
+                <li class="breadcrumb-item">Home</li>
+                <li class="breadcrumb-item active">Painel</li>
+            </ol>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+
+    <? if($log == "1" or $log == "3") {?>
+        <div class="card-body">
+
+            <div class="row mb-3">
+                <div class="col-md-2">
+                    <div class="card c-box">
+                        <div class="card-header bg-dark text-white">
+                            Contatos
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title" id="totalContacts"><?= $this->view->totContacts['total_contact'] ?></h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2">
+                    <div class="card c-box">
+                        <div class="card-header bg-dark text-white">
+                            Pendências
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title" id="TotNotfy"><?=$this->view->totNotfy[0]['tb_contacts']?></h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2">
+                    <div class="card c-box">
+                        <div class="card-header bg-dark text-white">
+                            Total de vendas
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title" id="totalVendas">?</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2">
+                    <div class="card c-box">
+                        <div class="card-header bg-dark text-white">
+                            Total de vendas
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title" id="totalVendas">?</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2">
+                    <div class="card c-box">
+                        <div class="card-header bg-dark text-white">
+                            Total de vendas
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title" id="totalVendas">?</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2">
+                    <div class="card c-box">
+                        <div class="card-header bg-dark text-white">
+                            Total de vendas
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title" id="totalVendas">?</h5>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        <?}?>
+                
+        <div class="col-md-12 p-2 mb-2">
+            <div class="row">
+
+                <!-- Body Card Infos -->
+                <div class="col-md-8 pl-1">
+                    <div class="card c-box">
+                        <div class="card-header bg-dark text-white">.</div>                    
+                        <div class="card-body">
+                            <div class="" height="300">
+                                teste
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End body Card Infos -->
+
+                <!-- Info user -->
+                <div class="col-md-4 pr-1">
+                    <div class="card c-box">
+                        <div class="card-header bg-dark text-white" align="center"><span class="bemvindo-user"><span class="text-center">Administrador</span></span></div>                    
+                        <div class="card-body">
+                            <img src="./assets/img/avatar2.png" alt="user" class="user-image">
+                            <span class="float-right pr-5 user-name"><?= $_SESSION['nome']?></span>
+                            <hr>
+                            <div>
+                                <?php if($_SESSION['id'] == 1) { ?>
+                                    <div class="card">
+                                        <span class="pl-2 text-center">Permição <span class="text-danger">Total</span></span>
+                                        <p align="center">
+                                            Tome cuidado com as ações dentro desse sistema com o usuário Administrador,
+                                            pois ele possui total autoridade dentro do dashboard. 
+                                        </p>
+                                    </div>
+                                <?php }?>
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <!-- End info user  -->
+            </div>
+        </div>
+
+    </div>
+
+</div>
+<!-- end row -->

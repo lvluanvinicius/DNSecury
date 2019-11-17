@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Luan Santos">		
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <![endif]-->
+
+    <!--[if lt IE 9]>
+    <script src="https://cdn.es.gov.br/scripts/extensions/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <![endif]-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.js" integrity="sha256-btup0J8ailzC2SIkxIm9kZnW4IlDDKihhohGVN7Nfns=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js" integrity="sha256-1eSvllkLdrfxD6G8RGF9h+mQuD93Af5+GdPBMNc7uMQ=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js" integrity="sha256-sqQlcOZwgKkBRRn5WvShSsuopOdq9c3U+StqgPiFhHQ=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
+    <script src="js/java_custom_1.js"></script>
+    <script src="js/contato.js"></script>
+    
+
+    <!-- CSS Custom -->
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <link rel="stylesheet" type="text/css" href="css/contact-form.css">
+    <link rel="stylesheet" href="css/quem-somos.css">
+    <link rel="stylesheet" type="text/css" href="css/estilo-service.css">
+
+
+    <!-- OWL Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"> 
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <title>DNSecury</title>
+  </head>
+  <body>
+
+    <header><!-- Cabeçalho -->
+
+
+      <nav class="navbar navbar-expand-sm navbar-light fixed-top fund-traparent-nav">
+
+        <div class="container">
+
+            <div class="navbar-collapse collapse" id="nav-principal">
+
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link font-weight-bold text-monospace" href="/">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link font-weight-bold text-monospace" href="/servicos">Serviços</a></li>
+                <li class="nav-item"><a class="nav-link font-weight-bold text-monospace" href="/quemSomos">Corporação</a></li>
+                <li class="nav-item"><a class="nav-link font-weight-bold text-monospace" href="/contato">Contato</a></li>
+              </ul>
+
+            </div>
+
+          <button class="ml-2 navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
+            <i class="fas fa-bars hover-icons-sociais"></i>
+          </button>
+
+          <a href="/"><i class="navbar-brand font-weight-bold text-white fas fa-shield-alt"> DNSecury</i></a>
+
+        </div>
+
+      </nav>
+
+    </header><!-- Fim cabeçalho -->
+
+    <?= $this->content() ;?>
+
+    <footer class="footer-principal pb-3"><!-- Início rodapé -->
+
+      <!-- <div class="title-footer bg-info">
+        <div class="container">
+
+          <div class="">
+            Teste
+          </div>
+
+        </div>
+      </div> -->
+
+      <div class="container">
+        <div class="row text-white pt-5 pb-5">
+
+          <div class="col-md-2 d-none d-md-block"><br/><br/>
+            <span><i class="fas fa-shield-alt fa-6x hover-icons-sociais"></i></span><br/><br/>
+          </div>
+
+          <div class="col-md-3">
+            <div>
+              <h6>Relevantes</h6>
+              <p><a href="#">Minha conta</a></p>
+              <p><a onclick="baixarApp()" style="cursor: pointer;">App notícias</a></p>
+              <p><a href="#">quem somos</a></p>
+              <p><a href="#">Agentes</a></p>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div>
+              <h6>Serviços</h6>
+              <p><a href="#">Pentest</a></p>
+              <p><a href="#">Treinamentos</a></p>
+              <p><a href="/contato">Contato</a></p>
+              <p><a href="#">Segurança Patrimonial</a></p>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div>
+              <h6>Links úteis</h6>
+              <p><a href="#">Depoimentos</a></p>
+              <p><a href="#">Atendimento</a></p>
+              <p><a href="#">quem somos</a></p>
+              <p><a href="#">Contrato</a></p>
+            </div>
+          </div>
+
+          <div class="col-md-1">
+
+            <div class="text-white"><br/>
+              <a class="text-white" href="#"><i class="fab fa-facebook fa-2x hover-icons-sociais"></i></a><br/><br/>
+              <a class="text-white" href="#"><i class="fab fa-instagram fa-2x hover-icons-sociais"></i></a><br/><br/>
+              <a class="text-white" href="#"><i class="fab fa-twitter fa-2x hover-icons-sociais"></i></a><br/><br/>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="footer-referencia">
+
+          <div class="hover-icons-sociais" align="center">
+            <span>&copy;&#160;DNSecury - 2019 &#160;|&#160;&commat;Email:&#160;contato@dnsecury.com </span>
+          </div>
+
+        </div>
+      </div>
+
+    </footer><!-- Fim rodapé -->
+
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- OWL Carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
+ 
+  </body>
+</html>

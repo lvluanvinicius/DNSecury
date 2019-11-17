@@ -1,0 +1,19 @@
+/* ======== Arquivo dedicado somenta para a página serviços ======== */
+
+
+.bg_video_services{
+  position: fixed; 
+  right: 0; 
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  width: auto; 
+  height: auto; 
+  z-index: -1000;
+  /*background: url("../imagens/cyber-security-3400657_1920.jpg") no-repeat;*/
+  background-size: cover; 
+}
+
+.box-one-servicos{
+  /*background-image: url("../imagens/cyber-security-3400657_1920.jpg");*/
+}

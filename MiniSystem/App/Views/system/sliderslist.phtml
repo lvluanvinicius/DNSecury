@@ -1,0 +1,39 @@
+<br>
+<?php if(isset($_GET['acao']) && $_GET['acao'] === 'select') {?>
+    <div class="alert alert-danger" style="margin-top: 4px;" role="alert">
+        Você deve selecionar um elemento para editar!
+    </div>
+<?php } elseif(isset($_GET['acaorm']) && $_GET['acaorm'] === 'success') {?>
+    <div class="alert alert-success" style="margin-top: 4px;" role="alert">
+        Elemento removido com sucesso!
+    </div>
+<?php } ?>
+
+<div id="box-table-list" class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+
+    <div class="card mb-3">
+        <div class="card-header">
+            <h3><i class="fa fa-newspaper"></i> Lista de slider</h3>
+        </div>
+            
+        <div class="card-body">
+            <div class="table-responsive">
+            <table id="example1" class="table table-bordered table-hover display">
+             
+                <tbody>
+
+                <?php foreach($this->view->elements as $key => $element) {?>                    
+                    <tr>
+                        <td colspan="9"><?= $element['title_element']?></td>
+                        <td><a href="/editaslider?acao=open&id=<?= $element['id']?>"><i style="cursor: pointer; float:right;" class="fas fa-edit fa-lg text-success"></i></a></td>
+                    </tr>
+                <?php } ?>
+
+                </tbody>
+                
+            </table>
+            </div>
+            
+        </div>														
+    </div><!-- end card-->					
+</div>

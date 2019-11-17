@@ -1,0 +1,143 @@
+/* body.background-lateral {
+  background: rgba(0, 0, 0, 0.1) url('../img/coluna.png') repeat-y!important;
+
+} */
+
+@media (min-width: 1200px) {
+  
+    .logo{
+      display: inline-block!important;
+      color: blue;
+      font-size: 1.3em;
+      font-variant: small-caps;
+      font-weight: bold;
+    }
+    .box-search {
+      margin-left: 40px;
+    }
+  
+    .box-search input {
+      width: auto;
+      margin-left: 540px;
+    }
+  
+    .box-search button {
+      padding: 1px;
+      font-size: 0.99em;
+      float: left;
+      margin-left: 30px;
+    }
+  
+    .form-search {
+      width: 1000px;
+      border-radius: 6px;
+      /* background-image: url('../icons/search.svg');
+      background-repeat: no-repeat;
+      background-position: right;
+      background-size: auto; */
+      cursor: pointer;
+    }
+  
+    .navbar-topo li {
+      list-style: none;
+      float: left;
+    }
+    .navbar-topo li a {
+      text-decoration: none;
+      padding: 0 15px 0 20px;
+    }
+    .navbar-topo li a:hover {
+      background-color: #f5f5f5;
+    }
+  
+    /* Area menu left */
+    .coluna-left {
+      float: left;      
+      width: 14.7%;
+      height: 100%;
+      margin-bottom: 10px;
+    }
+    .coluna-left ul {
+      padding-top: 15px;
+      padding: 0;
+    }
+  
+    .coluna-left ul li{
+      list-style: none;
+      padding: 6px;
+    }
+  
+    .coluna-left ul li a{
+      text-decoration: none;
+      margin: 15px!important;
+      color: black;
+    }
+    .coluna-left ul li a::after{
+      color: #007bff;
+    }
+  
+    .coluna-left ul li:hover {
+      background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.2), #f5f5f5, #f5f5f5, #f5f5f5, #f5f5f5, #f5f5f5, #f5f5f5);
+    }
+  
+    /* Area principal */
+    .area-principal {
+      border: 1px solid red;
+      float: right;
+      padding: 5px;
+      /* border: 1px solid red; */
+      width: 83%;
+      height: 100%;
+      margin-bottom: 10px;
+      margin-right: 20px;
+      box-sizing: border-box;
+    }
+    .area-principal h3 {
+      font-weight: 600;
+      font-size: 1.7em;
+    }
+    .area-principal .btn-custom-categoria {
+      border: 0.5px solid grey;
+      color: black;
+      font-weight: 400;
+    }
+
+    .user-image {
+      border-radius: 50px;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      background: rgba(255, 255, 255, 0.7);
+      padding: 5px;
+      width: 95px;
+      height: 93px;
+      margin: -55px auto 0 auto;
+      text-align: center;
+      box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .bemvindo-user{
+      font-size: 1.3em;
+      margin-left: 60px;
+    }
+
+    .user-name{
+      color: black;
+      font-size: 1.4em;
+      font-weight: 600;
+      text-decoration: underline;
+      text-shadow: 7px 7px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    #box-table-list {
+      padding-top: 20px;
+      margin: 0 auto;
+    }
+    #box-table-list [type='search'] {
+      width: 78%;
+    }
+    #box-table-list .card {
+      width: 1000px;
+      left: -258px;
+    }
+  }
+  
+

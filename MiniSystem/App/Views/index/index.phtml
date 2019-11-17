@@ -1,0 +1,53 @@
+<section class="h-100">
+		<div class="container h-100">
+			<div class="row justify-content-md-center h-100">
+				<div class="card-wrapper pt-5">
+					
+					<div class="card fat">
+						<div class="card-body">
+							<h4 align="center" class="card-title"><i class="fas fa-shield-alt fa-x"> MiniSystem</i></h4>
+							<form action="/autenticar" method="POST">
+							 
+								<div class="form-group">
+									<label for="username">Username</label>
+
+									<input id="username" type="text" class="form-control" name="username" value="" required autofocus>
+								</div>
+
+								<div class="form-group">
+									<label for="password">Password
+										<!-- <a href="forgot.html" class="float-right">
+											Forgot Password?
+										</a> -->
+									</label>
+									<input id="password" type="password" class="form-control" name="password" required data-eye>
+								</div>
+
+								<div class="form-group">
+									<input type="checkbox" name="check" value="concordar"> Concordar com os
+									<a href="/termos">Termos de uso e privacidade </a>									
+								</div>						
+
+								<div class="form-group no-margin pt-4">
+									<button type="submit" class="btn btn-color-submit btn-block">
+										Login
+									</button>
+								</div>
+								<div class="margin-top20 text-center">
+									<?php if(isset($_GET['login']) && $_GET['login'] == 'check') {?>
+										<p class="text-danger">Você deve concordar com os termos!</p>
+									<?php } else if(isset($_GET['login']) && $_GET['login'] == 'error') {?>
+										<p class="text-danger">Usuario ou senha incorreto(s)!</p>
+									<?php } ?>
+								</div>
+							</form>
+						</div>
+						
+					</div>
+					<div class="footer text-dark">
+						Copyright &copy; DNSecury / System MiniSystem 2019
+					</div>
+				</div>
+			</div>
+		</div>
+</section>

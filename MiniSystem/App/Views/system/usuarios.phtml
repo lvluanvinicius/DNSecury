@@ -1,0 +1,53 @@
+
+<div id="box-table-list" class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">						
+    <div class="card mb-3">
+        <div class="card-header">
+            <div class="row">
+
+                <div class="col-md-11">
+                    <h3><i class="far fa-id-card"></i> Lista de usuários</h3>
+                </div>               
+            
+            </div>
+        </div>
+
+        <?php if(isset($_GET['rm']) && $_GET['rm'] == 'nao') {?>
+            <script>
+                $(window).ready(() => {
+                    alert("O usuário Admin não pode ser removido por questões administrativas!")
+                })
+            </script>
+        <?php } ?>
+            
+        <div class="card-body">
+            <div class="table-responsive">
+            <table id="example1" class="table table-bordered table-hover display">
+                
+                <thead>
+                    <tr>
+                        <th scope="col">Nome</th>
+                        <th scope="col">E-mail</th>
+                        <th scope="col">Username</th>
+                        <th scope="col">Tipo</th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+
+                <?php foreach($this->view->total_login as $key => $dado) {?>
+                <tbody>        
+                    <tr>
+                        <td><?= $dado['nome']?></td>
+                        <td><?= $dado['email']?></td>
+                        <td><?= $dado['username']; ?></td>
+                        <td><?= $dado['type'] ?></td>
+                        <td><a href="/remover?acao=removerlogin&id=<?= $dado['id']?>"><i style="cursor: pointer;" class="fas fa-times fa-lg text-danger"></i></a></td>
+                    </tr> 
+                </tbody>      
+                <?php } ?>
+
+            </table>
+            </div>
+            
+        </div>														
+    </div><!-- end card-->					
+</div>

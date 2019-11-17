@@ -1,0 +1,48 @@
+<div id="box-table-list" class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">						
+    <div class="card mb-3">
+        <div class="card-header">
+            <div class="row">
+
+                <div class="col-md-11">
+                    <h3><i class="far fa-id-card"></i> Lista de contatos</h3>
+                </div>
+
+                <div class="col-md-1">
+                    <button type="submit" class="float-right btn-custom" id="refresh"><i class="fas fa-sync-alt"></i></button>
+                </div>
+            
+            </div>
+        </div>
+            
+        <div class="card-body">
+            <div class="table-responsive">
+            <table id="example1" class="table table-bordered table-hover display">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>E-mail</th>
+                        <th>Assunto</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>										
+                <tbody>    
+
+                    <?php foreach ($this->view->dados as $key => $dado) {?>
+                        <tr>
+                            <td><?= utf8_encode($dado['name']) ?></td>
+                            <td><?= utf8_encode($dado['mail']) ?></td>
+                            <td><?= utf8_encode($dado['subject']) ?></td>
+                            <td><a href="/remover?acao=remover&id=<?= $dado['id']?>"><i style="cursor: pointer;" class="fas fa-times fa-lg text-danger"></i></a></td>
+                            <td><a href="/alterStatus?acao=alter&id=<?= $dado['id']?>"><i style="cursor: pointer;" class="fas fa-envelope-open-text fa-lg text-success"></i></a></td>
+                            
+                        </tr>
+                    <?php } ?>
+
+                </tbody>
+            </table>
+            </div>
+            
+        </div>														
+    </div><!-- end card-->					
+</div>
