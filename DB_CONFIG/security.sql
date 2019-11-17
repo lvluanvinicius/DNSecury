@@ -76,14 +76,6 @@ CREATE TABLE `tb_contacts` (
   `provedor` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Extraindo dados da tabela `tb_contacts`
---
-
-INSERT INTO `tb_contacts` (`id`, `id_status`, `name`, `mail`, `tel`, `subject`, `message`, `city`, `data_system`, `estado`, `ip`, `zip`, `country`, `provedor`) VALUES
-(22, 1, ',kj', 'jdkjd@email.comn', 'jm', 'mm', 'mjj', 'mjmj', '17/11/2019 13:34', '', '', '', '', '');
-
--- --------------------------------------------------------
 
 --
 -- Estrutura da tabela `type_user`
